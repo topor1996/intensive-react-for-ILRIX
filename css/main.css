@@ -1,0 +1,229 @@
+body {
+    margin: 0;
+    background-color: #201F2E;
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+}
+
+p {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #843465;
+    border-radius: 32px;
+}
+
+
+/* HEADER */
+
+.header-wrapper {
+    padding: 12px 0;
+}
+
+.header-wrapper__top {
+    display: flex;
+    margin-bottom: 49px;
+}
+
+.header-teaser__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.header-teaser__date {
+    font-weight: 300;
+    font-size: 18px;
+    color: #C4C1CF;
+}
+
+.header-wrapper__logo {
+    position: absolute;
+    right: 0;
+    top: 0;
+    pointer-events: none;
+}
+
+.header-menu__list {
+    display: flex;
+    padding-bottom: 8px;
+    width: 100%;
+    overflow-x: auto;
+    scrollbar-color: #6969dd #e0e0e0;
+    scrollbar-width: thin;
+}
+
+.header-menu__list::-webkit-scrollbar {
+    height: 8px;
+    background-color: #143861;
+}
+
+.header-menu__item {
+    border: 1px solid transparent;
+    border-radius: 32px;
+    cursor: pointer;
+    list-style-type: none;
+}
+
+.header-menu__item:hover {
+    border-color: #C4C1CF;
+}
+
+.header-menu__item a {
+    display: block;
+    padding: 10px 20px;
+}
+
+
+/* MAIN */
+
+.main-block__products {
+    padding: 40px 0;
+}
+
+.products__list li {
+    position: relative;
+    height: 421px;
+    background-image: url('/images/Blackberry.jpg');
+    background-size: cover;
+    border-radius: 35px;
+}
+
+.products__list li:not(:last-of-type) {
+    margin-bottom: 32px;
+}
+
+.products__item-discount {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    padding: 20px 10px;
+    background-color: #0E0D13;
+    border-radius: 24px;
+}
+
+.products__item-discount-procents {
+    text-align: right;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.products__item-discount-desc {
+    font-weight: 300;
+    font-size: 14px;
+    color: #C4C1CF;
+}
+
+.products__item-name {
+    position: absolute;
+    bottom: 24px;
+    left: 32px;
+}
+
+.products__item-name-title {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.products__item-name-desc {
+    font-weight: 300;
+    font-size: 18px;
+    color: #C4C1CF;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #0E0D13;
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+}
+
+.footer-wrapper {
+    padding: 24px 0;
+}
+
+.footer-wrapper__form {
+    width: auto;
+}
+
+input {
+    position: relative;
+    width: 100px;
+    height: 42px;
+    border-radius: 42px;
+    border: 1px solid transparent;
+    background: #44414E;
+    outline: none;
+    transition: .3s linear;
+    text-align: center;
+}
+
+input::placeholder {
+    font-weight: 500;
+    font-size: 18px;
+    color: #C4C1CF;
+}
+
+input:focus {
+    width: 300px;
+}
+
+
+/* button {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    background-image: url('/images/Loop.svg');
+    background-size: cover;
+    border: none;
+    top: 0;
+    right: 0;
+}
+
+button:before {
+    content: "";
+    color: #324b4e;
+} */
+
+@media (min-width: 360px) {
+    .container {
+        width: 320px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 740px;
+    }
+    .products__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .products__item {
+        width: 45%;
+        border-radius: 45px;
+    }
+    footer {
+        border-radius: 32px;
+    }
+}
