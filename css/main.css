@@ -101,7 +101,7 @@ a {
 .products__list li {
     position: relative;
     height: 421px;
-    background-image: url('/images/Blackberry.jpg');
+    background-image: url('../images/Blackberry.jpg');
     background-size: cover;
     border-radius: 35px;
 }
