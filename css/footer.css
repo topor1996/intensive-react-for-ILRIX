@@ -1,0 +1,43 @@
+/* FOOTER */
+
+footer {
+    background-color: var(--black);
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+}
+
+.footer-wrapper {
+    padding: 24px 0;
+}
+
+.footer-wrapper__form {
+    width: auto;
+}
+
+.footer-form__input {
+    position: relative;
+    width: 100px;
+    height: 42px;
+    border-radius: 42px;
+    border: 1px solid transparent;
+    background: var(--dark_grey);
+    outline: none;
+    transition: .3s linear;
+    text-align: center;
+}
+
+.footer-form__input::placeholder {
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--grey);
+}
+
+.footer-form__input:focus {
+    width: 300px;
+}
+
+@media (min-width: 768px) {
+    footer {
+        border-radius: 32px;
+    }
+}

@@ -1,0 +1,84 @@
+/* MAIN */
+
+.main-block__products {
+    padding: 40px 0;
+}
+
+.products__item {
+    position: relative;
+    height: 421px;
+    background-image: url('../images/Blackberry.jpg');
+    background-size: cover;
+    border-radius: 35px;
+}
+
+.products__item:not(:last-of-type) {
+    margin-bottom: 32px;
+}
+
+.products__item-discount {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    padding: 20px 10px;
+    background-color: var(--black);
+    border-radius: 24px;
+}
+
+.products__item-discount-procents {
+    text-align: right;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.products__item-discount-desc {
+    font-weight: 300;
+    font-size: 14px;
+    color: var(--grey);
+}
+
+.products__item-name {
+    position: absolute;
+    bottom: 24px;
+    left: 32px;
+}
+
+.products__item-name-title {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.products__item-name-desc {
+    font-weight: 300;
+    font-size: 18px;
+    color: var(--grey);
+}
+
+
+/* button {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    background-image: url('/images/Loop.svg');
+    background-size: cover;
+    border: none;
+    top: 0;
+    right: 0;
+}
+
+button:before {
+    content: "";
+    color: #324b4e;
+} */
+
+@media (min-width: 768px) {
+    .products__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .products__item {
+        width: 45%;
+        border-radius: 45px;
+    }
+}
