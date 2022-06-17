@@ -1,6 +1,9 @@
 /* FOOTER */
 
 footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     background-color: var(--black);
     border-top-left-radius: 32px;
     border-top-right-radius: 32px;
