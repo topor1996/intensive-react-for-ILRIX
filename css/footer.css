@@ -1,6 +1,10 @@
 /* FOOTER */
 
-footer {
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
     background-color: var(--black);
     border-top-left-radius: 32px;
     border-top-right-radius: 32px;
@@ -34,10 +38,4 @@ footer {
 
 .footer-form__input:focus {
     width: 300px;
-}
-
-@media (min-width: 768px) {
-    footer {
-        border-radius: 32px;
-    }
 }

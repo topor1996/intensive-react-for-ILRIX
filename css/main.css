@@ -5,15 +5,27 @@
 }
 
 .products__item {
-    position: relative;
-    height: 421px;
-    background-image: url('../images/Blackberry.jpg');
-    background-size: cover;
-    border-radius: 35px;
+    padding: 0 16px;
 }
 
 .products__item:not(:last-of-type) {
     margin-bottom: 32px;
+}
+
+.products__item-block {
+    position: relative;
+    height: 421px;
+    border-radius: 35px;
+}
+
+.blackberry {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 48.96%, rgba(14, 13, 19, 0.9) 89.58%), url('../images/Blackberry.jpg');
+    background-size: cover;
+}
+
+.mojito {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 48.96%, rgba(14, 13, 19, 0.9) 89.58%), url('../images/Mojito.jpg');
+    background-size: cover;
 }
 
 .products__item-discount {
@@ -72,13 +84,18 @@ button:before {
 } */
 
 @media (min-width: 768px) {
+    .main-block {
+        margin-top: 112px;
+        margin-bottom: 100px;
+    }
     .products__list {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
     }
     .products__item {
         width: 45%;
+        max-width: 363px;
+        padding: 0 16px;
         border-radius: 45px;
     }
 }
