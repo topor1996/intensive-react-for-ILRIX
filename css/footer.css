@@ -3,7 +3,8 @@
 .footer {
     position: fixed;
     bottom: 0;
-    width: 100%;
+    left: 0;
+    right: 0;
     background-color: var(--black);
     border-top-left-radius: 32px;
     border-top-right-radius: 32px;
@@ -39,8 +40,4 @@
     width: 300px;
 }
 
-@media (min-width: 768px) {
-    footer {
-        border-radius: 32px;
-    }
-}
+
