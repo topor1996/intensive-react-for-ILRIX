@@ -36,7 +36,7 @@ button {
     margin: 0 auto;
 }
 
- ::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background-color: var(--background_pink);
     border-radius: 32px;
 }

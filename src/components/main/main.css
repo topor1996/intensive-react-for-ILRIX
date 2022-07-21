@@ -19,12 +19,12 @@
 }
 
 .blackberry {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 48.96%, rgba(14, 13, 19, 0.9) 89.58%), url('../images/Blackberry.jpg');
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 48.96%, rgba(14, 13, 19, 0.9) 89.58%), url('/src/images/Blackberry.jpg');
     background-size: cover;
 }
 
 .mojito {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 48.96%, rgba(14, 13, 19, 0.9) 89.58%), url('../images/Mojito.jpg');
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 48.96%, rgba(14, 13, 19, 0.9) 89.58%), url('/src/images/Mojito.jpg');
     background-size: cover;
 }
 
