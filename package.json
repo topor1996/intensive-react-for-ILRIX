@@ -1,0 +1,29 @@
+{
+  "name": "intensive-react-for-IRLIX",
+  "version": "1.0.0",
+  "description": "Учебный проект для интенсива по React от IRLIX",
+  "main": "index.js",
+  "dependencies": {
+    "@babel/cli": "^7.18.9",
+    "@babel/core": "^7.18.9",
+    "@babel/preset-env": "^7.18.9",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/preset-typescript": "^7.18.6",
+    "react": "^18.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/topor1996/intensive-react-for-IRLIX.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/topor1996/intensive-react-for-IRLIX/issues"
+  },
+  "homepage": "https://github.com/topor1996/intensive-react-for-IRLIX#readme"
+}
