@@ -1,7 +1,7 @@
 import React from 'react';
 import './main.css';
 
-function Footer() {
+function Main() {
     return (
         <main class="main">
             <div class="container">
@@ -118,4 +118,4 @@ function Footer() {
     );
 }
 
-export default Footer;
+export default Main;
