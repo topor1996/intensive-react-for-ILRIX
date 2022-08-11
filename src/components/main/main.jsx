@@ -10,11 +10,11 @@ function Main() {
                     <div class="main-block__products">
                         <div class="products">
                             <ul class="products__list">
-                                <Card/>
-                                <Card/>
-                                <Card/>
-                                <Card/>
-                                <Card/>
+                                <Card items={this.state.currentItems} onAdd={this.addToOrder}/>
+                                <Card items={this.state.currentItems} onAdd={this.addToOrder}/>
+                                <Card items={this.state.currentItems} onAdd={this.addToOrder}/>
+                                <Card items={this.state.currentItems} onAdd={this.addToOrder}/>
+                                <Card items={this.state.currentItems} onAdd={this.addToOrder}/>
                             </ul>
                         </div>
                     </div>

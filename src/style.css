@@ -1,5 +1,5 @@
 @import url('normalize.css');
 @import url('color.css');
-@import url('components/header/header.css');
-@import url('components/main/main.css');
-@import url('components/footer/footer.css');
+@import url('components/header/Header.css');
+@import url('components/main/Main.css');
+@import url('components/footer/Footer.css');

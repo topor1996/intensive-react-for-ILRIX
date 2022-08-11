@@ -1,5 +1,6 @@
 import React from 'react';
-import './header.css';
+import './Header.css';
+import Categories  from '../Header-nav/Header-nav';
 
 function Header() {
     return (
@@ -25,8 +26,9 @@ function Header() {
                         </div>
                     </div>
                     <div class="header-wrapper__menu header-menu">
-                        <ul class="header-menu__list">
-                            <li class="header-menu__item">
+                        < Categories />
+                        {/* <ul class="header-menu__list"> */}
+                            {/* <li class="header-menu__item">
                                 <button class="header-menu__link">Новинки</button>
                             </li>
                             <li class="header-menu__item">
@@ -37,8 +39,9 @@ function Header() {
                             </li>
                             <li class="header-menu__item">
                                 <button class="header-menu__link">Крепкие</button>
-                            </li>
-                        </ul>
+                            </li> */}
+                            
+                        {/* </ul> */}
                     </div>
                 </div>
             </div>
