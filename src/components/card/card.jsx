@@ -1,29 +1,36 @@
 import React from 'react';
+import './Card.css';
+import { NavLink } from 'react-router-dom';
 
+function Card({item}) {   
 
-function Card() {
     return (
-        <li class="products__item">
-            <div class="products__item-block blackberry">
-                <div class="products__item-discount ">
-                    <div class="products__item-discount-procents">
-                        <p>30%</p>
+        <li class="products__item" >
+            <NavLink key={item.id} to={`/about/${item.id}`}>
+                <div class="products__item-block">
+                    <div className='products__item-image__wrapper'>
+                        <img className='products__item-image' src={item.thumb} alt={item.alt} />
                     </div>
-                    <div class="products__item-discount-desc">
-                        <p>Алкоголь</p>
+                    <div class="products__item-discount ">
+                        <div class="products__item-discount-procents">
+                            <p>{item.procent}%</p>
+                        </div>
+                        <div class="products__item-discount-desc">
+                            <p>{item.alcohol}</p>
+                        </div>
+                    </div>
+                    <div class="products__item-name">
+                        <div class="products__item-name-title">
+                            <p>{item.name}</p>
+                        </div>
+                        <div class="products__item-name-desc">
+                            <p>{item.desc}</p>
+                        </div>
                     </div>
                 </div>
-                <div class="products__item-name">
-                    <div class="products__item-name-title">
-                        <p>Blackberry</p>
-                    </div>
-                    <div class="products__item-name-desc">
-                        <p>Освежающий напиток</p>
-                    </div>
-                </div>
-            </div>
+            </NavLink>
         </li>
     );
 }
 
-export default Card;
+export default React.memo(Card);

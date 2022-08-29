@@ -43,20 +43,25 @@
 }
 
 .header-menu__item {
-    border: 1px solid transparent;
-    border-radius: 32px;
-    cursor: pointer;
+    /* border: 1px solid transparent;
+    border-radius: 32px; */
     list-style-type: none;
 }
 
-.header-menu__item:hover {
-    border-color: var(--grey);
+.header-menu__link:hover {
+    color: var(--grey);
 }
 
 .header-menu__link {
+    border: 1px solid transparent;
     display: block;
     padding: 10px 20px;
     font-size: 18px;
+}
+
+.active {
+    border-color: var(--grey);
+    border-radius: 32px;
 }
 
 @media (min-width: 768px) {

@@ -1,9 +1,10 @@
 import React from 'react';
+// import logo from '@image/logo.svg';
 import './Header.css';
-import Categories  from '../Header-nav/Header-nav';
+import Categories from './Header-nav/Header-nav';
 
 function Header() {
-    return (
+    return (        
         <header class="header">
             <div class="container">
                 <div class="header-wrapper ">
@@ -26,22 +27,7 @@ function Header() {
                         </div>
                     </div>
                     <div class="header-wrapper__menu header-menu">
-                        < Categories />
-                        {/* <ul class="header-menu__list"> */}
-                            {/* <li class="header-menu__item">
-                                <button class="header-menu__link">Новинки</button>
-                            </li>
-                            <li class="header-menu__item">
-                                <button class="header-menu__link">Сладкие</button>
-                            </li>
-                            <li class="header-menu__item">
-                                <button class="header-menu__link">Хит</button>
-                            </li>
-                            <li class="header-menu__item">
-                                <button class="header-menu__link">Крепкие</button>
-                            </li> */}
-                            
-                        {/* </ul> */}
+                        <Categories category={['Новинки', 'Сладкие', 'Хит', 'Крепкие']} />
                     </div>
                 </div>
             </div>

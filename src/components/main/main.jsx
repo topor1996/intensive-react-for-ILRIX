@@ -1,27 +1,54 @@
-import React from 'react';
-import './main.css';
-import Card from '../card/card';
+import React, { useEffect } from 'react';
+import Card from '../Card/Card';
+import './Main.css';
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchCoctails, selectCoctails } from '../../redux/reducers/filterSlice';
+import Empty from '../Card/Empty';
 
-function Main() {
-    return (
-        <main class="main">
-            <div class="container">
-                <section class="main-block">
-                    <div class="main-block__products">
-                        <div class="products">
-                            <ul class="products__list">
-                                <Card items={this.state.currentItems} onAdd={this.addToOrder}/>
-                                <Card items={this.state.currentItems} onAdd={this.addToOrder}/>
-                                <Card items={this.state.currentItems} onAdd={this.addToOrder}/>
-                                <Card items={this.state.currentItems} onAdd={this.addToOrder}/>
-                                <Card items={this.state.currentItems} onAdd={this.addToOrder}/>
+
+function List() {    
+    const dispatch = useDispatch();
+    const {status, error, coctails} = useSelector(selectCoctails);
+
+    useEffect(() => {
+      dispatch(fetchCoctails());      
+    }, [dispatch]);   
+   
+    if (status === 'loading') {
+        return <div classNameName='status'>Загрузка...</div>;
+    } else if (status === 'rejected') { 
+        return <div classNameName='status'>Ошибка: {error.message}</div>
+    } else if (coctails.length === 0) {    
+        return (
+            <main className="main">
+                <div className="container">
+                    <section className="main-block__products">
+                        <div className="products">
+                            <ul className="products__list">
+                                <Empty />           
+                            </ul>
+                        </div>                                                           
+                    </section>                         
+                </div>
+            </main>                       
+        )
+    } else {      
+        return (
+            <main className="main">
+                <div className="container">
+                    <section className="main-block__products">
+                        <div className="products">
+                            <ul className="products__list">
+                            {coctails.map(item => (
+                                <Card key={item.id} item={item}/> 
+                            ))}                       
                             </ul>
                         </div>
-                    </div>
-                </section>
-            </div>
-        </main>
-    );
+                    </section>
+                </div>
+            </main>
+        );
+    }
 }
 
-export default Main;
+export default List;
