@@ -11,7 +11,7 @@ function Categories({category}) {
         setActiveItem(index)
     }
 
-    const dispatch = useDispatch();
+    const dispatch = useDispatch(); // eslint-disable-next-line 
        
     useEffect(() => {
         switch(activeItem) {            
